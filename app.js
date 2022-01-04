@@ -29,7 +29,7 @@ app.get('/', (req, res) => {
 
 app.post('/upload', (req, res) => {
     upload(req, res, err => {
-        // console.log(req.file);
+        console.log(req.files);
         if (!req.file)
             return res.send('Please upload a file')
 
@@ -44,7 +44,7 @@ app.post('/upload', (req, res) => {
                 })
                 .then(result => {
                     res.render('download', { text: result.text });
-                    // res.send(result.text);
+                     res.send(result.text);
                 })
                 .finally(() => worker.terminate());
         })

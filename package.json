@@ -1,7 +1,7 @@
 {
   "name": "auto-fill",
   "version": "1.0.0",
-  "description": "",
+  "description": "A Web App for Optical Character Recognition using Tesseract.js",
   "main": "app.js",
   "scripts": {
     "start": "node app.js",
